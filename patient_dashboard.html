@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+      <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+      <div class="logo">TenaLink</div>
+      <div class="auth-button">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i></a></button></li>
+        </ul>
+      </div>
+    </header>
+    <section class="se">
+      <input type="checkbox" id="menu-toggle" />
+      <aside class="sidebar">
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#">Book Appointment</a></li>
+            <li><a href="#">My Appointments</a></li>
+            <li><a href="#">Medical Records</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </nav>
+      </aside>
+  
+      <div class="admin-container">
+      <main class="admin-main">
+        <h2>Welcome Back!</h2>
+        <div class="dashboard-widgets">
+          <div class="widget">
+            <h3>Next Appointment</h3>
+            <p>Dr. dejene - May 15, 2025 at 10:00 AM</p>
+          </div>
+          <div class="widget">
+            <h3>Quick Search</h3>
+            <input type="text" placeholder="Search Doctor..." />
+          </div>
+          <div class="widget">
+            <h3>Payment Status</h3>
+            <p>Last Payment: Paid - 300ETB</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    </section>
+</body>
+<footer>
+  <iframe src="footer.html" width="100%" frameborder="0"></iframe>
+</footer>
+</html>

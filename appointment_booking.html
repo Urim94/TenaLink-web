@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appointment Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <iframe src="header.html" width="100%" height="100%" frameborder="0"></iframe>
+  </header>
+
+  <div class="appointment-container">
+    <div class="appointment-header">
+      <h2>Book an Appointment</h2>
+    </div>
+    
+    <div class="appointment-content">
+      <div class="doctor-list">
+        <h4>Select a Doctor</h4>
+        <div class="doctor-filters">
+          <div>
+            <input type="text" placeholder="Search for Available Doctor" />
+            <button class="primary-btn">Search</button>
+          </div>
+        </div>
+
+        <br>
+        <div class="doctor-filters">
+          <h4>Available Doctors</h4>
+          <label for="specialty">Select Specialty:</label>
+          <select>
+            <option disabled selected>Select Specialty</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="dermatology">Dermatology</option>
+          </select>
+        </div>
+        
+        <div class="doctor-cards">
+          <div class="doctor-card">
+            <img src="doctor1.png" alt="Doctor" />
+            <h4>Dr. Abebe zeleke</h4>
+            <p>Cardiologist</p>
+            <p>Rating: 4.5</p>
+            <button class="btn btn-primary">Book Now</button>
+          </div>
+          <div class="doctor-card">
+            <img src="doctor2.png" alt="Doctor" />
+            <h4>Dr. Yohannes Demeke</h4>
+            <p>Pediatrician</p>
+            <p>Rating: 4.7</p>
+            <button class="btn btn-primary">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-form">
+        <h3>Booking Form</h3>
+        <form action="#">
+          <label for="appointment-date">Select Date:</label>
+          <input type="date" id="appointment-date" name="appointment-date" />
+          
+          <label for="appointment-time">Select Time:</label>
+          <input type="time" id="appointment-time" name="appointment-time" />
+          
+          <label for="reason">Reason for Visit:</label>
+          <textarea id="reason" name="reason" placeholder="Describe your symptoms" rows="4"></textarea>
+          
+          <button class="primary-btn"><a href="payment.html">Pay Service fee</a></button>
+          <button type="submit" class="btn btn-primary">Confirm Appointment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <iframe src="footer.html" width="100%" height="100%" frameborder="0"></iframe>
+</footer>
+</html>

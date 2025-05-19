@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+  
+      <div class="logo">TenaLink</div>
+      <div class="auth-button">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i></a></button></li>
+        </ul>
+      </div>
+    </header>
+  <section class="doctor-section">
+    <input type="checkbox" id="menu-toggle" />
+    <aside class="sidebar">
+      <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">My Appointments</a></li>
+        <li><a href="#">Patient Records</a></li>
+        <li><a href="#">My Schedule</a></li>
+      </ul>
+      </nav>
+      
+    </aside>
+    <div class="admin-container">
+      <main class="dashboard-main">
+        <h2>Doctor Dashboard</h2>
+        <div class="dashboard-widgets">
+          <div class="widget">
+            <h3>Today’s Appointments</h3>
+            <p>5 scheduled</p>
+          </div>
+          <div class="widget">
+            <h3>Consultation History</h3>
+            <p>23 patients this week</p>
+          </div>
+          <div class="widget">
+            <h3>Availability</h3>
+            <label>
+              <input type="checkbox" checked />
+              Available for Consultation
+            </label>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+  
+</body>
+<footer>
+  <iframe src="footer.html" width="100%" height="100%" frameborder="0"></iframe>
+</footer>
+</html>
